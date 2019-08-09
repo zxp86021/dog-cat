@@ -1,0 +1,46 @@
+{
+    "name": "zxp86021/dog-cat",
+    "description": "Get Image From TheDogAPI and TheCatAPI",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "richegg Tsai",
+            "email": "zxp86021@gmail.com"
+        }
+    ],
+    "require": {
+        "php" : ">=7.0",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "zxp86021\\DogCat\\": "src"
+        },
+        "files": [
+
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "zxp86021\\DogCat\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
