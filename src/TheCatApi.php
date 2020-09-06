@@ -3,11 +3,11 @@
 namespace TheDogCat;
 
 /**
- * Class Api
+ * Class TheCatApi
  *
  * @package TheDogCat
  */
-class Api
+class TheCatApi
 {
     /**
      * Version number of the SDK.
@@ -17,10 +17,10 @@ class Api
     const VERSION = '0.0.1';
 
     /**
-     * The name of the environment variable that contains the Telegram Bot API Access Token.
+     * The name of the environment variable that contains the API Key.
      *
      * @var string
      */
-    const BOT_TOKEN_ENV_NAME = 'TELEGRAM_BOT_TOKEN';
+    const ENV_KEY_NAME = 'THE_CAT_API_KEY';
 
 }
