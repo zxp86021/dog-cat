@@ -71,8 +71,12 @@ class TheDogCatServiceProvider extends ServiceProvider
     {
         $this->mergeConfigFrom(self::CONFIG_PATH, 'the-dog-cat');
 
-        $app->alias('dog.api', TheDogApi::class);
-        $app->alias('cat.api', TheCatApi::class);
+        $app->singleton('the-dog-cat', function ($app) {
+            return new TheDogApi();
+        });
+
+        //$app->alias('dog.api', TheDogApi::class);
+        //$app->alias('cat.api', TheCatApi::class);
     }
 
     /**
@@ -82,6 +86,6 @@ class TheDogCatServiceProvider extends ServiceProvider
      */
     public function provides(): array
     {
-        return ['the-dog-cat',];
+        return ['the-dog-cat'];
     }
 }
